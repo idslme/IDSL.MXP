@@ -15,6 +15,6 @@ To use this package, follow below commands:
 
 	path <- “location address of the mass spectrometry file”
 	msfile <- "name of the mass spectrometry file with its extension"
-	msobject <- IDSL.MXP::scanTable(path, msfile)
+	msobject <- IDSL.MXP::peak2list(path, msfile)
 
 msobject is a list with two objects - 1) ScanTable, a data.frame of different scan properties, and 2) spectraList, a list of m/z and intensity values for each scan
