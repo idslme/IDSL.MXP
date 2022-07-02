@@ -192,9 +192,11 @@ getScanTable <- function(xmlData, msFormat) {
       if (length(precursorScanNum) == 0) {
         precursorScanNum <- NA
       } else {
-        precursorScanNum <- precursorScanNum[1]
-        x_scan <- MXP_locate_regex(precursorScanNum, "scan=")
-        precursorScanNum <- substr(precursorScanNum, (x_scan[2] + 1), nchar(precursorScanNum))
+        if (!is.na(precursorScanNum)) {
+          precursorScanNum <- precursorScanNum[1]
+          x_scan <- MXP_locate_regex(precursorScanNum, "scan=")
+          precursorScanNum <- substr(precursorScanNum, (x_scan[2] + 1), nchar(precursorScanNum))
+        }
       }
       ##
       precursorMZ <- xml_attr(precursorMZNodes[[i]], "value")

@@ -15,8 +15,8 @@ Maintainer: Sadjad Fakouri-Baygi <sadjad.fakouri-baygi@mssm.edu>
 Description: A tiny parser to extract mass spectra data and metadata table of MS acquisition properties from mzML, mzXML and netCDF mass spectrometry files.
 License: MIT + file LICENSE
 URL: https://ipa.idsl.me/mxp,
-        https://github.com/idslme/idsl.ipa
+        https://github.com/idslme/idsl.mxp
         https://colab.research.google.com/drive/1gXwwuI1zzDHykKfodLSQQt5rwTuFEMpD
-BugReports: https://github.com/idslme/idsl.ipa/issues
+BugReports: https://github.com/idslme/idsl.mxp/issues
 Encoding: UTF-8
 Archs: i386, x64
