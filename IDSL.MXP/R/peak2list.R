@@ -1,6 +1,7 @@
 peak2list <- function(path = getwd(), MSfileName = "") {
   ##
   MSfileLocation <- paste0(path, "/", MSfileName)
+  MSfileLocation <- gsub("\\", "/", MSfileLocation, fixed = TRUE)
   strMSfileLocation <- strsplit(MSfileLocation, "/")[[1]]
   MSfileName <- strMSfileLocation[length(strMSfileLocation)]
   MSfileLocation <- paste0(strMSfileLocation, collapse = "/")
