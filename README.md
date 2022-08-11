@@ -1,4 +1,4 @@
-# IDSL.MXP<img src='MXP_educational_files/Figures/IDSL.MXP-logo.PNG' width="250px" align="right" />
+# IDSL.MXP<img src='MXP_educational_files/Figures/IDSL.MXP-logo.png' width="250px" align="right" />
 
 <!-- badges: start -->
 [![Maintainer](https://img.shields.io/badge/maintainer-Sadjad_Fakouri_Baygi-blue)](https://github.com/sajfb)
