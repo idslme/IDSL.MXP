@@ -10,6 +10,8 @@
 
 A tiny parser to extract mass spectra data and metadata table of MS acquisition properties from mzML, mzXML and netCDF mass spectrometry files.
 
+	install.packages("IDSL.MXP")
+
 Visit https://ipa.idsl.me/mxp for the detailed documentation and tutorial.
 
 To use this package, follow below commands:
