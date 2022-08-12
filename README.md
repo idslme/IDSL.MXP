@@ -12,8 +12,7 @@ A tiny parser to extract mass spectra data and metadata table of MS acquisition 
 
 	install.packages("IDSL.MXP")
 
-Visit https://ipa.idsl.me/mxp for the detailed documentation and tutorial.
-
+##
 To use this package, follow below commands:
 
 	path <- “location address of the mass spectrometry file”
@@ -21,3 +20,6 @@ To use this package, follow below commands:
 	msobject <- IDSL.MXP::peak2list(path, msfile)
 
 msobject is a list with two objects - 1) scanTable, a data.frame of different scan properties, and 2) spectraList, a list of m/z and intensity values for each scan
+
+##
+Visit https://ipa.idsl.me/mxp for the detailed documentation and tutorial.
