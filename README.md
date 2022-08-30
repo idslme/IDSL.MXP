@@ -8,11 +8,11 @@
 [![Dependencies](https://tinyverse.netlify.com/badge/IDSL.MXP)](https://cran.r-project.org/package=IDSL.MXP)
 <!-- badges: end -->
 
-A tiny parser to extract mass spectra data and metadata table of MS acquisition properties from mzML, mzXML and netCDF mass spectrometry files.
+[MiXed Parser](https://ipa.idsl.me/mxp) is a tiny parser to extract mass spectra data and metadata table of MS acquisition properties from mzML, mzXML and netCDF mass spectrometry files.
 
 	install.packages("IDSL.MXP")
 
-##
+## Workflow
 To use this package, follow below commands:
 
 	path <- “location address of the mass spectrometry file”
@@ -21,5 +21,8 @@ To use this package, follow below commands:
 
 msobject is a list with two objects - 1) scanTable, a data.frame of different scan properties, and 2) spectraList, a list of m/z and intensity values for each scan
 
-##
 Visit https://ipa.idsl.me/mxp for the detailed documentation and tutorial.
+
+## Citation
+
+Fakouri Baygi, S., Kumar, Y. Barupal, D.K. [IDSL. IPA characterizes the organic chemical space in untargeted LC/HRMS datasets](https://pubs.acs.org/doi/10.1021/acs.jproteome.2c00120). *Journal of proteome research*, **2022**, *21(6)*, 1485-1494.
