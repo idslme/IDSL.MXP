@@ -8,7 +8,7 @@
 [![Dependencies](https://tinyverse.netlify.com/badge/IDSL.MXP)](https://cran.r-project.org/package=IDSL.MXP)
 <!-- badges: end -->
 
-[MiXed Parser](https://ipa.idsl.me/mxp) is a tiny parser to extract mass spectra data and metadata table of MS acquisition properties from mzML, mzXML and netCDF mass spectrometry files.
+[Mass Spectrometry Parser](https://ipa.idsl.me/mxp) is a tiny parser to extract mass spectra data and metadata table of MS acquisition properties from mzML, mzXML and netCDF mass spectrometry files.
 
 	install.packages("IDSL.MXP")
 
