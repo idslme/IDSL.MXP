@@ -19,9 +19,9 @@ To use this package, follow below commands:
 	MSfileName <- "name of the mass spectrometry file with its extension"
 	mxpObject <- IDSL.MXP::peak2list(path, MSfileName)
 
-msobject is a list with two objects - 1) scanTable, a data.frame of different scan properties, and 2) spectraList, a list of m/z and intensity values for each scan.
+msobject is a list with two objects - 1) **scanTable**, a data.frame of different scan properties, and 2) **spectraList**, a list of m/z and intensity values for each scan.
 
-See an example on [Google colab](https://colab.research.google.com/drive/1gXwwuI1zzDHykKfodLSQQt5rwTuFEMpD)
+Visit [**wiki**](https://github.com/idslme/IDSL.MXP/wiki/Example-for-IDSL.MXP) and [Google colab](https://colab.research.google.com/drive/1gXwwuI1zzDHykKfodLSQQt5rwTuFEMpD) to illustrate performance of IDSL.MXP.
 
 Visit https://ipa.idsl.me/mxp for the detailed documentation and tutorial.
 
