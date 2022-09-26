@@ -4,7 +4,7 @@
 getScanTable
 }
 \description{
-This function creates a scanTable for the chromatogram scans of the mass spectrometry data.
+This function creates a scanTable from chromatogram scans of the mass spectrometry data.
 }
 \usage{
 getScanTable(xmlData, msFormat)
@@ -29,7 +29,7 @@ temp_wd <- tempdir()
 temp_wd_zip <- paste0(temp_wd,"/idsl_ipa_test_files.zip")
 download.file(paste0("https://github.com/idslme/IDSL.IPA/blob/main/",
 "IPA_educational_files/idsl_ipa_test_files.zip?raw=true"),
-destfile = temp_wd_zip)
+destfile = temp_wd_zip, mode = "wb")
 unzip(temp_wd_zip, exdir = temp_wd)
 xmlData <- xml2::read_xml(paste0(path = temp_wd, "/", MSfile = "003.mzML"))
 scanTable <- getScanTable(xmlData, msFormat = "mzML")

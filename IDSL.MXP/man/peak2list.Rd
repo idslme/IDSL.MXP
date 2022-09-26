@@ -4,7 +4,7 @@
 Peak to List (The main function)
 }
 \description{
-This function returns a list of two data objects needed for the mass spectrometry data processing.
+This function returns a list of two data objects required for the mass spectrometry data processing.
 }
 \usage{
 peak2list(path = getwd(), MSfileName = "")
@@ -40,7 +40,7 @@ temp_wd <- tempdir()
 temp_wd_zip <- paste0(temp_wd,"/idsl_ipa_test_files.zip")
 download.file(paste0("https://github.com/idslme/IDSL.IPA/blob/main/",
 "IPA_educational_files/idsl_ipa_test_files.zip?raw=true"),
-destfile = temp_wd_zip)
+destfile = temp_wd_zip, mode = "wb")
 unzip(temp_wd_zip, exdir = temp_wd)
 p2l <- peak2list(path = temp_wd, MSfileName = "003.mzML")
 }
