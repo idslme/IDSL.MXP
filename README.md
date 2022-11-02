@@ -12,8 +12,7 @@
 
 	install.packages("IDSL.MXP")
 
-#### Note
-In case you want to process **netCDF/CDF** mass spectrometry data, you should also install the [**RnetCDF**](https://CRAN.R-project.org/package=RNetCDF) package separately using the below command.
+**Note:** In case you want to process **netCDF/CDF** mass spectrometry data, you should also install the [**RnetCDF**](https://CRAN.R-project.org/package=RNetCDF) package separately using the below command.
 
 	install.packages("RNetCDF")
 
