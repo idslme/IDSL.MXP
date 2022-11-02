@@ -1,4 +1,4 @@
-# IDSL.MXP<img src='MXP_educational_files/Figures/IDSL.MXP-logo.png' width="250px" align="right" />
+# IDSL.MXP <img src='MXP_educational_files/Figures/IDSL.MXP-logo.png' width="250px" align="right" />
 
 <!-- badges: start -->
 [![Maintainer](https://img.shields.io/badge/maintainer-Sadjad_Fakouri_Baygi-blue)](https://github.com/sajfb)
@@ -12,6 +12,11 @@
 
 	install.packages("IDSL.MXP")
 
+#### Note
+In case you want to process **netCDF/CDF** mass spectrometry data, you should also install the [**RnetCDF**](https://CRAN.R-project.org/package=RNetCDF) package separately using the below command.
+
+	install.packages("RNetCDF")
+
 ## Workflow
 To use this package, follow below commands:
 
@@ -19,7 +24,7 @@ To use this package, follow below commands:
 	MSfileName <- "name of the mass spectrometry file with its extension"
 	mxpObject <- IDSL.MXP::peak2list(path, MSfileName)
 
-msobject is a list with two objects - 1) **scanTable**, a data.frame of different scan properties, and 2) **spectraList**, a list of m/z and intensity values for each scan.
+msobject is a list with two objects - **1) scanTable**, a data.frame of different scan properties, and **2) spectraList**, a list of m/z and intensity values for each scan.
 
 Visit [**wiki**](https://github.com/idslme/IDSL.MXP/wiki/Example-for-IDSL.MXP) and [Google colab](https://colab.research.google.com/drive/1gXwwuI1zzDHykKfodLSQQt5rwTuFEMpD) to illustrate performance of IDSL.MXP.
 
