@@ -2,7 +2,7 @@ getSpectra <- function(xmlData, msFormat) {
   spectraList <- NA
   if (tolower(msFormat) == "mzml") {
     spectrumNodes1 <- xml_find_first(xmlData, '//d1:spectrum')
-    ################################################################################
+    ############################################################################
     firstNode <- xml_find_first(spectrumNodes1, "//d1:spectrum")
     ##
     BitNode1000523 <- xml_find_first(firstNode, '//d1:cvParam[@accession="MS:1000523"]')
@@ -23,7 +23,7 @@ getSpectra <- function(xmlData, msFormat) {
       mzPrecision <- precision1000523
       intPrecision <- precision1000521
     }
-    ################################################################################
+    ############################################################################
     compressionTypeFirst <- xml_find_first(firstNode, '//d1:cvParam[@accession="MS:1000574"]|//d1:cvParam[@accession="MS:1000576"]')
     ##
     compressionType <- "none"
@@ -64,6 +64,9 @@ getSpectra <- function(xmlData, msFormat) {
       ##
       cbind(MZ, INT)
     })
+    ##
+    ############################################################################
+    ##
   } else if (tolower(msFormat) == "mzxml") {
     peaksNodes <- xml_find_all(xmlData, '//d1:scan/d1:peaks')
     compressionOrder <- xml_attrs(peaksNodes[[1]])

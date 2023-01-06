@@ -8,11 +8,11 @@
 [![Dependencies](https://tinyverse.netlify.com/badge/IDSL.MXP)](https://cran.r-project.org/package=IDSL.MXP)
 <!-- badges: end -->
 
-[**Mass Spectrometry Parser (MXP)**](https://ipa.idsl.me/mxp) is a tiny parser to extract mass spectra data and metadata table of MS acquisition properties from mzML, mzXML and netCDF mass spectrometry files.
+[**Mass Spectrometry Parser (MXP)**](https://ipa.idsl.me/mxp) by the [**Integrated Data Science Laboratory for Metabolomics and Exposomics (IDSL.ME)**](https://www.idsl.me/) is a tiny parser to extract mass spectra data and metadata table of instrumentational acquisition properties from mzML, mzXML and netCDF mass spectrometry files.
 
 	install.packages("IDSL.MXP")
-
-**Note:** In case you want to process **netCDF/CDF** mass spectrometry data, you should also install the [**RnetCDF**](https://CRAN.R-project.org/package=RNetCDF) package separately using the below command.
+	
+**Note:** In case you want to process **netCDF/CDF** mass spectrometry data by IDSL.MXP, you should also install the [**RnetCDF**](https://CRAN.R-project.org/package=RNetCDF) package separately using the below command.
 
 	install.packages("RNetCDF")
 
@@ -23,11 +23,9 @@ To use this package, follow below commands:
 	MSfileName <- "name of the mass spectrometry file with its extension"
 	mxpObject <- IDSL.MXP::peak2list(path, MSfileName)
 
-msobject is a list with two objects - **1) scanTable**, a data.frame of different scan properties, and **2) spectraList**, a list of m/z and intensity values for each scan.
+**msobject** is a list with two objects - **1) scanTable**, a data.frame of different scan properties, and **2) spectraList**, a list of m/z and intensity values for each scan.
 
 Visit [**wiki**](https://github.com/idslme/IDSL.MXP/wiki/Example-for-IDSL.MXP) and [Google colab](https://colab.research.google.com/drive/1gXwwuI1zzDHykKfodLSQQt5rwTuFEMpD) to illustrate performance of IDSL.MXP.
-
-Visit https://ipa.idsl.me/mxp for the detailed documentation and tutorial.
 
 ## Citation
 

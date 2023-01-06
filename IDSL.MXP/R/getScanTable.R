@@ -46,8 +46,12 @@ getScanTable <- function(xmlData, msFormat) {
       }
       ##
       x_acquisitionNum <- MXP_locate_regex(spectrumId, "=")
-      x_acquisitionNum <- x_acquisitionNum[nrow(x_acquisitionNum), 2]
-      acquisitionNum <- substr(spectrumId, (x_acquisitionNum + 1), nchar(spectrumId))
+      if (!is.null(x_acquisitionNum)) {
+        x_acquisitionNum <- x_acquisitionNum[nrow(x_acquisitionNum), 2]
+        acquisitionNum <- substr(spectrumId, (x_acquisitionNum + 1), nchar(spectrumId))
+      } else {
+        acquisitionNum <- NULL
+      }
       if (length(acquisitionNum) == 0) {
         acquisitionNum <- NA
       }
@@ -195,7 +199,11 @@ getScanTable <- function(xmlData, msFormat) {
         if (!is.na(precursorScanNum)) {
           precursorScanNum <- precursorScanNum[1]
           x_scan <- MXP_locate_regex(precursorScanNum, "scan=")
-          precursorScanNum <- substr(precursorScanNum, (x_scan[2] + 1), nchar(precursorScanNum))
+          if (!is.null(x_scan)) {
+            precursorScanNum <- substr(precursorScanNum, (x_scan[2] + 1), nchar(precursorScanNum))
+          } else {
+            precursorScanNum <- NA
+          }
         }
       }
       ##

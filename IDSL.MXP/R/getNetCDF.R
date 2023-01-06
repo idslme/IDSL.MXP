@@ -1,5 +1,10 @@
 getNetCDF <- function(MSfile) {
   ##
+  RNetCDFpackageCheck <- tryCatch(requireNamespace('RNetCDF', quietly = TRUE), error = function(e) {FALSE})
+  if (!RNetCDFpackageCheck) {
+    message("IDSL.MXP requires the 'RNetCDF' package to deconvolute `.netCDF` mass spectrometry data!")
+    stop(" <<< install.packages('RNetCDF') >>> ")
+  }
   netCDFmassSpectrometryfile <- RNetCDF::open.nc(MSfile)
   netCDFList <- RNetCDF::read.nc(netCDFmassSpectrometryfile)
   nameNetCDFList <- names(netCDFList)
