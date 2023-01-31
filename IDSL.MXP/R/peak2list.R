@@ -1,4 +1,4 @@
-peak2list <- function(path = getwd(), MSfileName = "") {
+peak2list <- function(path, MSfileName = "") {
   ##
   MSfileLocation <- paste0(path, "/", MSfileName)
   MSfileLocation <- gsub("\\", "/", MSfileLocation, fixed = TRUE)

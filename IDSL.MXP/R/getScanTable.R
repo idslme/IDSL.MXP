@@ -141,6 +141,13 @@ getScanTable <- function(xmlData, msFormat) {
         retentionTime <- NA
       } else {
         retentionTime <- retentionTime[1]
+        ##
+        retentionTimeUnit <- xml_attr(retentionTimeNodes[[i]], "unitName")
+        if (!is.na(retentionTimeUnit)) {
+          if (tolower(retentionTimeUnit) == "second") {
+            retentionTime <- as.numeric(retentionTime)/60
+          }
+        }
       }
       ##
       filterString <- xml_attr(filterStringNodes[[i]], "value")
@@ -196,14 +203,17 @@ getScanTable <- function(xmlData, msFormat) {
       if (length(precursorScanNum) == 0) {
         precursorScanNum <- NA
       } else {
-        if (!is.na(precursorScanNum)) {
+        precursorScanNum <- precursorScanNum[!is.na(precursorScanNum)]
+        if (length(precursorScanNum) > 0) {
           precursorScanNum <- precursorScanNum[1]
-          x_scan <- MXP_locate_regex(precursorScanNum, "scan=")
+          x_scan <- MXP_locate_regex(precursorScanNum, "scan=", ignore.case = TRUE)
           if (!is.null(x_scan)) {
             precursorScanNum <- substr(precursorScanNum, (x_scan[2] + 1), nchar(precursorScanNum))
           } else {
             precursorScanNum <- NA
           }
+        } else {
+          precursorScanNum <- NA
         }
       }
       ##

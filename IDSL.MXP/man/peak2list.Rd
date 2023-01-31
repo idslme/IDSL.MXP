@@ -7,7 +7,7 @@ Peak to List (The main function)
 This function returns a list of two data objects required for the mass spectrometry data processing.
 }
 \usage{
-peak2list(path = getwd(), MSfileName = "")
+peak2list(path, MSfileName = "")
 }
 \arguments{
   \item{path}{
@@ -16,9 +16,6 @@ address of the mass spectrometry file
   \item{MSfileName}{
 name of the mass spectrometry file with .mzML or .mzXML extensions
 }
-}
-\details{
-\url{https://ipa.idsl.me/mxp}
 }
 \value{
   \item{scanTable}{
