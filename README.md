@@ -6,6 +6,8 @@
 ![](http://cranlogs.r-pkg.org/badges/IDSL.MXP?color=orange)
 ![](http://cranlogs.r-pkg.org/badges/grand-total/IDSL.MXP?color=brightgreen)
 [![Dependencies](https://tinyverse.netlify.com/badge/IDSL.MXP)](https://cran.r-project.org/package=IDSL.MXP)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gXwwuI1zzDHykKfodLSQQt5rwTuFEMpD)
 <!-- badges: end -->
 
 [**Mass Spectrometry Parser (MXP)**](https://ipa.idsl.me/mxp) by the [**Integrated Data Science Laboratory for Metabolomics and Exposomics (IDSL.ME)**](https://www.idsl.me/) is a tiny parser to extract mass spectra data and metadata table of instrumentational acquisition properties from mzML, mzXML and netCDF mass spectrometry files.
