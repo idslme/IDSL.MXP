@@ -1,7 +1,7 @@
 # IDSL.MXP <img src='MXP_educational_files/Figures/IDSL.MXP-logo.png' width="250px" align="right" />
 
 <!-- badges: start -->
-[![Maintainer](https://img.shields.io/badge/maintainer-Sadjad_Fakouri_Baygi-blue)](https://github.com/sajfb)
+[![Creator](https://img.shields.io/badge/Creator-Sadjad_Fakouri_Baygi-blue)](https://github.com/sajfb)
 [![CRAN status](https://www.r-pkg.org/badges/version/IDSL.MXP)](https://cran.r-project.org/package=IDSL.MXP)
 ![](http://cranlogs.r-pkg.org/badges/IDSL.MXP?color=orange)
 ![](http://cranlogs.r-pkg.org/badges/grand-total/IDSL.MXP?color=brightgreen)
@@ -27,7 +27,7 @@ To use this package, follow below commands:
 	MSfileName <- "name of the mass spectrometry file with its extension"
 	mxpObject <- IDSL.MXP::peak2list(path, MSfileName)
 
-**mxpObject** is a list with two objects - **1) scanTable**, a data.frame of different scan properties, and **2) spectraList**, a list of m/z and intensity values for each scan.
+**mxpObject** is a list with two objects - **1) scanTable**, a metadata of different scan properties, and **2) spectraList**, a list of m/z and intensity values for each scan.
 
 Visit [**wiki**](https://github.com/idslme/IDSL.MXP/wiki/Example-for-IDSL.MXP) and [Google colab](https://colab.research.google.com/drive/1gXwwuI1zzDHykKfodLSQQt5rwTuFEMpD) to illustrate performance of IDSL.MXP.
 
