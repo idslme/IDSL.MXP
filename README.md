@@ -1,7 +1,7 @@
 # IDSL.MXP <img src='MXP_educational_files/Figures/IDSL.MXP-logo.png' width="250px" align="right" />
 
 <!-- badges: start -->
-[![Creator](https://img.shields.io/badge/Creator-Sadjad_Fakouri_Baygi-blue)](https://github.com/sajfb)
+[![Developed-by](https://img.shields.io/badge/Developed_by-Sadjad_Fakouri_Baygi-blue)](https://github.com/sajfb)
 [![CRAN status](https://www.r-pkg.org/badges/version/IDSL.MXP)](https://cran.r-project.org/package=IDSL.MXP)
 ![](http://cranlogs.r-pkg.org/badges/IDSL.MXP?color=orange)
 ![](http://cranlogs.r-pkg.org/badges/grand-total/IDSL.MXP?color=brightgreen)
